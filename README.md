@@ -12,22 +12,20 @@ from parcelapp_api import Parcel
 
 ### Initialization
 ```python
-api = Parcel("MY TOKEN")
+# request url arg can be left out if you only intend on adding and removing parcels
+parcels = Parcel("TOKEN", "REQUEST URL")
 ```
 
 ### Usage
 ```python
-print(api.parceladd("DESCRIPTION", "TRKNUMBER", "CARRIER CODE"))
+print(parcels.add("DESCRIPTION", "TRACKING NUMBER", "CARRIER CODE"))
 > ADDED
-```
 
-```python
-print(api.parcelrm("TRKNUMBER", "CARRIER CODE"))
+print(parcels.remove("TRACKING NUMBER", "CARRIER CODE"))
 > SUCCESS
-```
 
-```python
-api.parcellist("REQUEST URL")
+# returns list of all parcels and is able to display parcels in a rich-formatted table, request url arg can be left out if defined during initialization
+print(parcels.fetch("REQUEST URL", table=True))
 ```
 
 ### Obtaining Token, Request URL, and Carrier Codes 
