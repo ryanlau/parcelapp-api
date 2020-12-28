@@ -28,7 +28,7 @@ class Parcel:
       parcels = json.loads(parcels.text.split("(", 1)[1][:-1])
 
       parcels = parcels[0]
-      
+
       table = Table(title="Parcels")
       table.add_column("ID", justify="left", style="", no_wrap=True)
       table.add_column("Estimated Delivery Date", justify="left", style="", no_wrap=True)
@@ -49,5 +49,5 @@ class Parcel:
 
           table.add_row(str(i), parcel[5], parcel[1], parcel[0], parcel[4][0][0])
           i += 1
-
-      return table
+      console = Console()
+      console.print(table)

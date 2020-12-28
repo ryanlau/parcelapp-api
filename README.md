@@ -4,10 +4,10 @@ This is an unofficial python API for interacting with the [Parcel app](https://p
 
 ### Setup
 
-Add [parcelapp-api.py](https://raw.githubusercontent.com/rynlu/parcelapp-api/main/parcelapp-api.py) to your package directory and import functions with the following line:
+Add [parcelapp_api.py](https://raw.githubusercontent.com/rynlu/parcelapp-api/main/parcelapp_api.py) to your package directory and import the Parcel class with the following line:
 
 ```python
-from parcelapp-api import Parcel
+from parcelapp_api import Parcel
 ```
 
 ### Initialization
