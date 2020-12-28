@@ -1,4 +1,4 @@
-# parcelapp-api
+# parcelapp_api
 
 This is an unofficial python API for interacting with the [Parcel app](https://parcelapp.net/). This API currently supports adding, removing, and listing parcels.
 
