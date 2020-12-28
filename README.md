@@ -1,10 +1,10 @@
-# parcelapp-api
+# parcelapp_api
 
 This is an unofficial python API for interacting with the [Parcel app](https://parcelapp.net/). This API currently supports adding, removing, and listing parcels.
 
 ### Setup
 
-Add [parcelapp_api.py](https://raw.githubusercontent.com/rynlu/parcelapp-api/main/parcelapp_api.py) to your package directory and import the Parcel class with the following line:
+Add [parcelapp_api.py](https://raw.githubusercontent.com/rynlu/parcelapp_api/main/parcelapp_api.py) to your package directory and import the Parcel class with the following line:
 
 ```python
 from parcelapp_api import Parcel
